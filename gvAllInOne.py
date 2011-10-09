@@ -46,8 +46,8 @@ class GoogleVoiceLogin:
 		urllib2.install_opener(self.opener)
 
 		# Define URLs
-		self.login_page_url = 'https://www.google.com/accounts/ServiceLogin'
-		self.authenticate_url = 'https://www.google.com/accounts/ServiceLoginAuth'
+		self.login_page_url = 'https://accounts.google.com/ServiceLogin?service=grandcentral'
+		self.authenticate_url = 'https://accounts.google.com/ServiceLoginAuth?service=grandcentral'
 		self.gv_home_page_url = 'https://www.google.com/voice/#inbox'
 		self.contacts_url = 'https://www.google.com/voice/c/u/{0}/ui/ContactManager'
 		
