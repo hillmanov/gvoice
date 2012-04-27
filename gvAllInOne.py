@@ -111,7 +111,7 @@ class ContactLoader():
 		Which allows for easy access to any group. 
 		"""
 		self.opener = gv_login.opener
-		self.contacts_csv_url = "http://mail.google.com/mail/contacts/data/export"
+		self.contacts_csv_url = "https://mail.google.com/mail/c/u/0/data/export"
 		self.contacts_csv_url += "?groupToExport=^Mine&exportType=ALL&out=OUTLOOK_CSV&tok={0}".format(gv_login.contact_tok)
 
 		# Load ALL Google Contacts into csv dictionary
