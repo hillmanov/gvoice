@@ -67,7 +67,7 @@ class GoogleVoiceLogin:
 		login_page_contents = self.opener.open(self.login_page_url).read()
 
 		# Find GALX value
-		galx_match_obj = re.search(r'name="GALX"\s*value="([^"]+)"', login_page_contents, re.IGNORECASE)
+		galx_match_obj = re.search(r'name="GALX"\s*type="hidden"\n\s*value="([^"]+)"', login_page_contents, re.IGNORECASE)
 
 		galx_value = galx_match_obj.group(1) if galx_match_obj.group(1) is not None else ''
 
